@@ -1,2 +1,2 @@
 # slutprojekt_webbutveckling
-Edwin Almroth, Frida Karlsson och Astrid Foldevi ska sälja mycket droger
+Edwin Almroth, Frida Karlsson ska sälja mycket droger
