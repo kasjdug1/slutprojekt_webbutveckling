@@ -62,7 +62,7 @@ button a {
     font-size: 15px;
 }
 
-/* HERO IMAGE */
+/* IMAGE */
 .image {
     display: block;
     width: 50%;
@@ -112,4 +112,54 @@ body {
     margin: 0 auto;
     min-width: 300px;
     max-width: 1200px;
+}
+
+.reviews{
+
+  text-align: center;
+}
+
+.centeredImages{
+    align-items: center;
+}
+
+.blueBlock{
+  background-color: rgb(168, 149, 165);
+  width: 45%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.blueblock h1{
+  color: rgb(30, 173, 52);
+}
+
+.blueBlock p{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.circleImg{
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+}
+
+.whiteBlock{
+  background-color: white;
+  width: 310px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;
 }
