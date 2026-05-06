@@ -46,22 +46,54 @@ li a:hover {
     text-decoration: underline;
 }
 
-button {
+.nav-button {
+    display: inline-block;
     background-color: black;
-    margin-left: 10px;
+    color: white !important;
+    padding: 10px 14px;
     border-radius: 10px;
-    padding: 10px;
-    width: 90px;
-    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
-button a {
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
+.nav-button:hover {
+    background-color: #333;
+    text-decoration: none !important;
 }
 
+/* Bara sign in */
+.signin-page .login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-page .login-btn:hover {
+    background: #00c6ff;
+}
+
+/* Bara sign up */
+.signup-page .signup-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-page .signup-btn:hover {
+    background: #00c6ff;
+}
 /* IMAGE */
 .image {
     display: block;
@@ -162,4 +194,226 @@ body {
   border-right: 20px solid transparent;
   
   border-top: 20px solid #f00;
+}
+
+/* sign in */
+/* =========================
+   ONLY SIGN-IN PAGE STYLES
+   (påverkar inget annat)
+========================= */
+
+.signin-page .login-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* login box */
+.signin-page .login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.signin-page .login-container h2 {
+    margin-bottom: 20px;
+}
+
+/* inputs */
+.signin-page .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.signin-page .input-group label {
+    font-size: 14px;
+}
+
+.signin-page .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* button */
+.signin-page .login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-page .login-btn:hover {
+    background: #00c6ff;
+}
+
+/* links */
+.signin-page .extra-links {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.signin-page .extra-links a {
+    color: #4facfe;
+    text-decoration: none;
+}
+
+.signin-page .extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   ONLY SIGN-UP PAGE STYLES
+========================= */
+
+.signup-page .signup-page-content {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.signup-page .signup-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 340px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.signup-page .signup-container h2 {
+    margin-bottom: 20px;
+}
+
+.signup-page .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.signup-page .input-group label {
+    font-size: 14px;
+    display: block;
+}
+
+.signup-page .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-page .signup-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-page .signup-btn:hover {
+    background: #00c6ff;
+}
+
+.signup-page .extra-links {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.signup-page .extra-links a {
+    color: #4facfe;
+    text-decoration: none;
+}
+
+.signup-page .extra-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* ===== PROFILE PAGE ===== */
+.profile-page {
+    background: #f8f6f5;
+    min-height: 100vh;
+}
+
+.profile-wrapper {
+    max-width: 760px;
+    margin: 30px auto;
+    padding: 0 16px 30px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h1,
+.profile-card h2 {
+    margin-top: 0;
+    color: #1e5631;
+}
+
+#profileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#profileForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.setting-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.save-btn,
+.logout-btn {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.save-btn {
+    background: #1e5631;
+    color: #fff;
+}
+
+.logout-btn {
+    background: #b02a2a;
+    color: #fff;
+}
+
+.small-message {
+    margin-top: 8px;
+    font-size: 14px;
 }
