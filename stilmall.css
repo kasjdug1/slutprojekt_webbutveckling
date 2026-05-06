@@ -417,3 +417,142 @@ body {
     margin-top: 8px;
     font-size: 14px;
 }
+
+
+/* ===== REVIEWS PAGE ===== */
+.reviews-wrap {
+  width: min(900px, 92%);
+  margin: 0 auto 40px;
+}
+
+.reviews-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0 12px;
+}
+
+.reviews-title {
+  margin-top: 24px;
+}
+
+.review-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: grid;
+  gap: 12px;
+}
+
+.review-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.reviews-btn {
+  border: none;
+  background: #1e5631;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.reviews-btn.secondary {
+  background: #333;
+}
+
+.reviews-msg {
+  margin: 0;
+  font-size: 14px;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 12px;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.review-name {
+  font-weight: 800;
+}
+
+.review-rating {
+  font-family: system-ui, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.review-text {
+  line-height: 1.6;
+}
+
+.review-meta {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.review-empty {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+
+/* ===== VIDEO BACKGROUND (RECENSIONER) ===== */
+.video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  background: #000; /* fallback om video inte laddar */
+}
+
+.video-bg__media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-bg__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: rgba(232, 222, 218, 0.70); /* gör texten läsbar */
+}
+
+/* Gör dina kort/sektioner läsbara ovanpå video */
+.reviews-wrap,
+.blueBlock,
+.reviews {
+  position: relative;
+}

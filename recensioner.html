@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sida 2</title>
-    <link rel="stylesheet" href="stilmall.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recensioner | Target Tasty</title>
+  <link rel="stylesheet" href="stilmall.css" />
 </head>
+
 <body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">Target Tasty</a></div>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="om_Oss.html">Om oss</a></li>
+        <li><a href="vanliga_Frågor.html">Vanliga frågor</a></li>
+        <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
+        <li><a href="recensioner.html">Recensioner</a></li>
+        <li><a href="användarprofil.html">Användarprofil</a></li>
+        <li><a href="nyhetsbrevsprenumeration.html">Nyhetsbrevsprenumeration</a></li>
+        <li><a href="dagens_nyheter.html">Dagens Nyheter</a></li>
+        <li><a class="nav-button" href="signIn.html">Sign In</a></li>
+        <li><a class="nav-button" href="signUp.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"><a href="#">Target Tasty</a></div>
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="om_Oss.html">Om oss</a></li>
-                <li><a href="vanliga_Frågor.html">Vanliga frågor</a></li>
-                <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
-                <li><a href="recensioner.html">Recensioner</a></li>
-                <li><a href="användarprofil.html">Användarprofil</a></li>
-                <li><a href="nyhetsbrevsprenumeration.html">Nyhetsbrevsprenumeration</a></li>
-                <li><a href="dagens_nyheter.html">Dagens Nyheter</a></li>
-                <button><a href="#">SignIn</a></button>
-                <button><a href="#">SignUp</a></button>
-            </ul>
-        </div>
-    </nav>
-        <img src="bilder/Skärmbild 2026-04-14 135739.png" class="image alt="Image of food!">     
+  <div class="video-bg" aria-hidden="true">
+  <video class="video-bg__media" autoplay muted loop playsinline>
+    <source src="videor/YTDown_YouTube_Media_QiFBgtgUtfw_001_720p.mp4" type="video/mp4" />
+  </video>
+</div>
 
-    <div class="reviews">
-        <h1>
-            Recensioner
-        </h1>
+<div class="video-bg__overlay" aria-hidden="true"></div>
+
+  <!-- HERO IMAGE (valfri) -->
+  <img src="bilder/Skärmbild 2026-04-14 135739.png" class="image" alt="Image of food" />
+
+  <!-- PAGE TITLE -->
+  <div class="reviews">
+    <h1>Recensioner</h1>
+  </div>
+
+  <!-- YOUR OLD STATIC REVIEW (valfri, kan tas bort) -->
+  <div class="blueBlock">
+    <h1>Recensioner från våra kunder</h1>
+    <div class="whiteBlock">
+      <p>
+        Target Tasty levererar riktigt hög kvalitet.
+        Köttet var fräscht och smakrikt, och recepten var enkla men
+        kändes lyxiga. Perfekt om man vill laga god mat utan krångel.
+        Rekommenderas starkt!
+      </p>
+    </div>
+    <br />
+    <img src="bilder/Skärmbild 2026-04-14 142617.png" alt="Recension" class="circleImg" />
+    <h3>Jonas Johansson</h3>
+  </div>
+
+  <!-- NEW REVIEWS SECTION -->
+  <section class="reviews-wrap">
+    <div class="reviews-header">
+      <h2>Skriv en recension</h2>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <button id="seedBtn" class="reviews-btn" type="button">Lägg in exempelrecensioner</button>
+        <button id="clearBtn" class="reviews-btn secondary" type="button">Rensa alla</button>
+      </div>
     </div>
 
-    <div class="blueBlock">
-        <h1>Recensioner från våra kunder</h1>
-        <div class="whiteBlock">
-            <p>
-                Target Tasty levererar riktigt hög kvalitet. 
-                Köttet var fräscht och smakrikt, och recepten var enkla men 
-                kändes lyxiga. Perfekt om man vill laga god mat utan krångel.
-                Rekommenderas starkt!
-            </p>
-        </div>
-        <br>
-        <img src="bilder/Skärmbild 2026-04-14 142617.png" alt=" recension" class="circleImg">
-        <h3>Jonas Johansson</h3>
+    <form id="reviewForm" class="review-form">
+      <label>
+        Namn
+        <input id="reviewName" type="text" placeholder="Ditt namn" required />
+      </label>
 
+      <label>
+        Betyg (1–5)
+        <select id="reviewRating" required>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+      </label>
 
-    </div>
+      <label>
+        Recension
+        <textarea id="reviewText" rows="5" placeholder="Skriv din recension..." required></textarea>
+      </label>
 
+      <button class="reviews-btn" type="submit">Publicera</button>
+      <p id="reviewsMsg" class="reviews-msg" aria-live="polite"></p>
+    </form>
 
-    <div class="container">
-        <h1>Rubrik för sidan</h1>
-        <p>Här skriver du innehållet för denna sida.</p>
-    </div>
+    <h2 class="reviews-title">Alla recensioner</h2>
+    <div id="reviewsList" class="reviews-list"></div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Din hemsida</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 Din hemsida</p>
+  </footer>
 
+  <!-- JS (separat fil) -->
+  <script src="recensioner.js"></script>
 </body>
 </html>
