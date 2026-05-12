@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             alert("Account created!");
 
+            localStorage.setItem("loggedIn", "true");
             window.location.href = "användarprofil.html";
 
         });
@@ -60,19 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
-    // ================= KONTOSIDA =================
-    const userBox = document.getElementById("user");
-
-    if (userBox) {
-        const user = JSON.parse(localStorage.getItem("user"));
-
-        if (!localStorage.getItem("loggedIn")) {
-            window.location.href = "signIn.html";
-        } else {
-            userBox.innerText = "Inloggad som: " + user.email;
-        }
-    }
 
 });
 

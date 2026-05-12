@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startsidan</title>
+    <title>Hem | Target Tasty</title>
     <link rel="stylesheet" href="stilmall.css"> 
 </head>
 <body class="index">
 
     <nav class="navbar">
         <div class="navdiv">
-            <div class="logo"><a href="#">Target Tasty</a></div>
+            <div class="logo"><a href="index.html">Target Tasty</a></div>
             <ul>
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="om_Oss.html">Om oss</a></li>
@@ -18,56 +18,87 @@
                 <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
                 <li><a href="recensioner.html">Recensioner</a></li>
                 <li><a href="användarprofil.html">Användarprofil</a></li>
-                <li><a href="nyhetsbrevsprenumeration.html">Nyhetsbrevsprenumeration</a></li>
-                <li><a href="dagens_nyheter.html">Dagens Nyheter</a></li>
-                <button><a href="signIn.html">SignIn</a></button>
-                <button><a href="#">SignUp</a></button>
+                <li><a class="nav-button" href="signIn.html">Sign in</a></li>
+                <li><a class="nav-button" href="signUp.html">Sign up</a></li>
             </ul>
         </div>
     </nav>
 
-    <img src="bilder/Namnlöst-123.png" class="image" alt="Image of food"> 
+    <main class="page">
+        <section class="hero">
+            <div>
+                <h1>Oavsett hur din vecka ser ut, så är middagen klar.</h1>
+                <p>
+                    Från snabblagade måltidskit till färdiglagade måltider ger Target Tasty dig mer tid,
+                    mindre stress och bättre matupplevelse – kväll efter kväll.
+                </p>
+                <a class="btn" href="recept_Och_Måltidslösningar.html">Utforska recept</a>
+                <a class="btn secondary" href="om_Oss.html">Om oss</a>
+            </div>
+            <div class="img-placeholder"><img src="bilder/familyEatingFood.jpg" alt="Familj äter mat tillsammans"></div>
+        </section>
 
-    <div class="center">
-        <h1>Oavsett hur din vecka ser ut, så är middagen klar.</h1>
-        <p>Från snabblagade måltidskit till färdiglagade måltider ger Target Tasty dig mer tid, <br>
-        mindre stress och bättre matupplevelse – kväll efter kväll.</p>
+    <h2 class="section-title">Varför Target Tasty?</h2>
+    <div class="grid">
+        <article class="card">
+            <h3>Snabbt</h3>
+            <p>Måltider som passar vardagen och blir klara utan krångel.</p>
+        </article>
+        <article class="card">
+            <h3>Anpassat</h3>
+            <p>Välj kalorisnålt, kaloriöverskott eller balanserat efter mål.</p>
+        </article>
+        <article class="card">
+            <h3>Smakrikt</h3>
+            <p>Hälsosamt behöver inte vara tråkigt – fokus på smak och kvalitet.</p>
+        </article>
     </div>
 
-    <!-- Content rows -->
+    <h2 class="section-title">Så funkar det</h2>
     <div class="content-wrapper">
         <div class="row">
-            <img src="bilder/coupleEatingFood.png" width="500px" class="border" alt="A couple eating food">
+            <div class="img-placeholder"><img src="bilder/god_mat.jpg.webp" alt="Hälsosam mat"></div>
             <div class="rowText">
-                <h2>Över 90 % av våra kunder känner sig hälsosammare med Target-Tasty</h2>
-                <p>Njut av näringsrika och skräddarsydda måltider utan att kompromissa med smak, variation eller dina hälsomål.</p>
+                <h2>Välj recept utifrån ditt mål</h2>
+                <p>Kalorisnålt för viktnedgång, kaloriöverskott för muskeluppbyggnad – eller balanserat för vardagen.</p>
             </div>
         </div>
 
         <div class="row">
             <div class="rowText">
                 <div class="left">
-                    <h2>93 % av våra kunder känner sig mindre stressade vid middagstid</h2>
-                    <p>Med idiotsäkra recept, flexibla portioner och publikvänliga alternativ som levereras varje vecka känns middagen enklare från början till slut.</p>
+                    <h2>Enkel planering, mindre stress</h2>
+                    <p>Tydliga recept och smarta måltidslösningar gör att middagen blir klar snabbt – kväll efter kväll.</p>
                 </div>
             </div>
-            <img src="bilder/familyEatingFood.jpg" width="500px" class="border" alt="Image of family eating food">
+            <div class="img-placeholder"><img src="bilder/coupleEatingFood.png" alt="Par äter mat"></div>
         </div>
 
         <div class="row">
-            <img src="bilder/familyPlaying.png" width="500px" class="border" alt="Image of family eating food">
+            <div class="img-placeholder"><img src="bilder/familyPlaying.png" alt="Familj som spelar tillsammans"></div>
             <div class="rowText">
-                <h2>98 % av våra kunder sparar tid vid middagen</h2>
-                <p>Target-Tasty levererar måltider direkt hem till dig, så att du kan hoppa över planering och matbutiksbesök. Njut av snabblagade, smakrika recept som är klara på bara 20 minuter.</p>
+                <h2>Beställ och gå vidare till kassan</h2>
+                <p>Lägg till ingredienser i kundvagnen och slutför köpet i kassan. Efter betalning får du en orderbekräftelse.</p>
+                <p style="margin-top:12px;">
+                    <a class="btn" href="kundvagn.html">Kundvagn</a>
+                    <a class="btn secondary" href="kassa.html">Kassa</a>
+                </p>
             </div>
         </div>
     </div>
 
-    <br><br>
-    <h1 class="center">Snabbt, enkelt, hälsosamt</h1>
+    <h2 class="section-title">Redo att komma igång?</h2>
+    <section class="card">
+        <p class="muted">Skapa konto och spara dina inställningar och preferenser i din profil.</p>
+        <p style="margin-top:12px;">
+            <a class="btn" href="signUp.html">Skapa konto</a>
+            <a class="btn secondary" href="signIn.html">Logga in</a>
+        </p>
+    </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Din hemsida</p>
+        <p>&copy; 2026 Target Tasty</p>
     </footer>
 
 </body>
