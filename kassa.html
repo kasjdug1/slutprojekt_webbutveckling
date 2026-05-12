@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kassa | Target Tasty</title>
-    <link rel="stylesheet" href="stilmall.css">
+    <link rel="stylesheet" href="css/stilmall.css">
 </head>
 <body>
     <nav class="navbar">
@@ -12,13 +12,15 @@
             <div class="logo"><a href="index.html">Target Tasty</a></div>
             <ul>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="om_Oss.html">Om oss</a></li>
-                <li><a href="vanliga_Frågor.html">Vanliga frågor</a></li>
-                <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+                <li><a href="recept-och-maltider.html">Recept och måltidslösningar</a></li>
                 <li><a href="recensioner.html">Recensioner</a></li>
-                <li><a href="användarprofil.html">Användarprofil</a></li>
-                <li><a class="nav-button" href="signIn.html">Sign in</a></li>
-                <li><a class="nav-button" href="signUp.html">Sign up</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                <li><a href="sociala-medier.html">Sociala medier</a></li>
+                <li><a href="anvandarprofil.html">Användarprofil</a></li>
+                <li><a class="nav-button" href="logga-in.html">Logga in</a></li>
+                <li><a class="nav-button" href="skapa-konto.html">Skapa konto</a></li>
             </ul>
         </div>
     </nav>
@@ -30,31 +32,51 @@
                 <p>Fyll i leveransuppgifter och välj betalning.</p>
                 <a class="btn secondary" href="kundvagn.html">Tillbaka till kundvagn</a>
             </div>
-            <div class="img-placeholder" aria-hidden="true"></div>
+            <figure class="img-placeholder">
+                <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+            </figure>
         </section>
 
-        <div class="two-col" style="margin-top:18px;">
+        <div class="two-col mt-18">
             <section class="card">
-                <h3>Leveransuppgifter</h3>
-                <form>
-                    <label>Fullständigt namn<br><input type="text" class="leverans"></label><br><br>
-                    <label>Adress<br><input type="text" class="leverans"></label><br><br>
-                    <label>Postnummer<br><input type="text" class="leverans"></label><br><br>
-                    <label>Stad<br><input type="text" class="leverans"></label>
+                <h2>Leveransuppgifter</h2>
+                <form class="contact-form" action="#" method="post">
+                    <div class="field-block">
+                        <label for="shipName">Fullständigt namn</label>
+                        <input class="field" type="text" id="shipName" name="shipName" autocomplete="name" required>
+                    </div>
+                    <div class="field-block">
+                        <label for="shipAddress">Adress</label>
+                        <input class="field" type="text" id="shipAddress" name="shipAddress" autocomplete="address-line1" required>
+                    </div>
+                    <div class="field-block">
+                        <label for="shipZip">Postnummer</label>
+                        <input class="field" type="text" id="shipZip" name="shipZip" inputmode="numeric" autocomplete="postal-code" required>
+                    </div>
+                    <div class="field-block">
+                        <label for="shipCity">Stad</label>
+                        <input class="field" type="text" id="shipCity" name="shipCity" autocomplete="address-level2" required>
+                    </div>
                 </form>
             </section>
 
             <section class="card">
-                <h3>Betalning</h3>
+                <h2>Betalning</h2>
                 <p class="muted">Välj betalningsmetod (placeholder).</p>
-                <label><input type="radio" name="pay" checked> Kort</label><br>
-                <label><input type="radio" name="pay"> Swish</label><br>
-                <label><input type="radio" name="pay"> Faktura</label>
+                <div class="field-block">
+                    <label for="payCard"><input type="radio" id="payCard" name="pay" value="card" checked> Kort</label>
+                </div>
+                <div class="field-block">
+                    <label for="paySwish"><input type="radio" id="paySwish" name="pay" value="swish"> Swish</label>
+                </div>
+                <div class="field-block">
+                    <label for="payInvoice"><input type="radio" id="payInvoice" name="pay" value="invoice"> Faktura</label>
+                </div>
 
-                <div style="margin-top:14px;">
+                <div class="mt-14">
                     <h3>Sammanfattning</h3>
                     <p class="muted">Totalt: 0 kr (placeholder)</p>
-                    <a class="btn" href="orderbekraftelse.html">Genomför köp</a>
+                    <a class="btn" href="order-bekraftelse.html">Genomför köp</a>
                 </div>
             </section>
         </div>

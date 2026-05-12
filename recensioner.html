@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recensioner | Target Tasty</title>
-  <link rel="stylesheet" href="stilmall.css" />
+  <link rel="stylesheet" href="css/stilmall.css" />
 </head>
 
 <body>
@@ -14,38 +14,39 @@
       <div class="logo"><a href="index.html">Target Tasty</a></div>
       <ul>
         <li><a href="index.html">Hem</a></li>
-        <li><a href="om_Oss.html">Om oss</a></li>
-        <li><a href="vanliga_Frågor.html">Vanliga frågor</a></li>
-        <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+        <li><a href="recept-och-maltider.html">Recept och måltidslösningar</a></li>
         <li><a href="recensioner.html">Recensioner</a></li>
-        <li><a href="användarprofil.html">Användarprofil</a></li>
-        <li><a class="nav-button" href="signIn.html">Sign in</a></li>
-        <li><a class="nav-button" href="signUp.html">Sign up</a></li>
+        <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+        <li><a href="sociala-medier.html">Sociala medier</a></li>
+        <li><a href="anvandarprofil.html">Användarprofil</a></li>
+        <li><a class="nav-button" href="logga-in.html">Logga in</a></li>
+        <li><a class="nav-button" href="skapa-konto.html">Skapa konto</a></li>
       </ul>
     </div>
   </nav>
 
-
-<div class="video-bg__overlay" aria-hidden="true"></div>
-
   <main class="page">
-    <section class="hero" style="margin-top: 12px;">
+    <section class="hero hero--compact">
       <div>
         <h1>Recensioner</h1>
         <p>
           Läs vad andra tycker om Target Tasty – och skriv egna recensioner när du vill.
           Recensionerna sparas lokalt i din webbläsare.
         </p>
-        <a class="btn secondary" href="recept_Och_Måltidslösningar.html">Till recept</a>
+        <a class="btn secondary" href="recept-och-maltider.html">Till recept</a>
       </div>
-      <div class="img-placeholder" aria-hidden="true"></div>
+      <figure class="img-placeholder">
+        <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+      </figure>
     </section>
 
 
   <section class="reviews-wrap">
     <div class="reviews-header">
       <h2>Skriv en recension</h2>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <div class="flex-row-gap">
         <button id="seedBtn" class="reviews-btn" type="button">Lägg in exempelrecensioner</button>
         <button id="clearBtn" class="reviews-btn secondary" type="button">Rensa alla</button>
       </div>
@@ -59,8 +60,8 @@
 
       <label>
         Betyg (1–5)
-        <select id="reviewRating" required>
-          <option value="5">5</option>
+        <select id="reviewRating">
+          <option value="5" selected>5</option>
           <option value="4">4</option>
           <option value="3">3</option>
           <option value="2">2</option>
@@ -86,6 +87,6 @@
     <p>&copy; 2026 Target Tasty</p>
   </footer>
 
-  <script src="recensioner.js"></script>
+  <script src="js/recensioner.js"></script>
 </body>
 </html>

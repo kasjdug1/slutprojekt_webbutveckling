@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detaljerat recept | Target Tasty</title>
-    <link rel="stylesheet" href="stilmall.css">
+    <link rel="stylesheet" href="css/stilmall.css">
 </head>
 <body>
     <nav class="navbar">
@@ -12,13 +12,15 @@
             <div class="logo"><a href="index.html">Target Tasty</a></div>
             <ul>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="om_Oss.html">Om oss</a></li>
-                <li><a href="vanliga_Frågor.html">Vanliga frågor</a></li>
-                <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+                <li><a href="recept-och-maltider.html">Recept och måltidslösningar</a></li>
                 <li><a href="recensioner.html">Recensioner</a></li>
-                <li><a href="användarprofil.html">Användarprofil</a></li>
-                <li><a class="nav-button" href="signIn.html">Sign in</a></li>
-                <li><a class="nav-button" href="signUp.html">Sign up</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                <li><a href="sociala-medier.html">Sociala medier</a></li>
+                <li><a href="anvandarprofil.html">Användarprofil</a></li>
+                <li><a class="nav-button" href="logga-in.html">Logga in</a></li>
+                <li><a class="nav-button" href="skapa-konto.html">Skapa konto</a></li>
             </ul>
         </div>
     </nav>
@@ -32,14 +34,16 @@
                     Byt text/bild senare.
                 </p>
                 <a class="btn" href="kundvagn.html">Lägg i kundvagn</a>
-                <a class="btn secondary" href="recept_Och_Måltidslösningar.html">Tillbaka till recept</a>
+                <a class="btn secondary" href="recept-och-maltider.html">Tillbaka till recept</a>
             </div>
-            <div class="img-placeholder" aria-hidden="true"></div>
+            <figure class="img-placeholder">
+                <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+            </figure>
         </section>
 
-        <div class="two-col" style="margin-top:18px;">
-            <section class="card">
-                <h2 style="margin-top:0; color: var(--green);">Ingredienser</h2>
+        <div class="two-col mt-18">
+            <section class="card recept-panel">
+                <h2>Ingredienser</h2>
                 <ul class="muted">
                     <li>Kycklingfilé (2 portioner)</li>
                     <li>Quinoa</li>
@@ -48,8 +52,8 @@
                     <li>Kryddor (salt, peppar, paprika)</li>
                 </ul>
             </section>
-            <section class="card">
-                <h2 style="margin-top:0; color: var(--green);">Näringsinformation</h2>
+            <section class="card recept-panel">
+                <h2>Näringsinformation</h2>
                 <p class="muted"><strong>Per portion (exempel):</strong></p>
                 <ul class="muted">
                     <li>Kalorier: 520 kcal</li>
@@ -60,8 +64,8 @@
             </section>
         </div>
 
-        <section class="card" style="margin-top:14px;">
-            <h2 style="margin-top:0; color: var(--green);">Instruktioner</h2>
+        <section class="card mt-14 recept-panel">
+            <h2>Instruktioner</h2>
             <ol class="muted">
                 <li>Koka quinoa enligt anvisningar.</li>
                 <li>Stek kyckling med kryddor tills genomstekt.</li>

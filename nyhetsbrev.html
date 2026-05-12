@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyhetsbrev | Target Tasty</title>
+    <link rel="stylesheet" href="css/stilmall.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">Target Tasty</a></div>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+                <li><a href="recept-och-maltider.html">Recept och måltidslösningar</a></li>
+                <li><a href="recensioner.html">Recensioner</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                <li><a href="sociala-medier.html">Sociala medier</a></li>
+                <li><a href="anvandarprofil.html">Användarprofil</a></li>
+                <li><a class="nav-button" href="logga-in.html">Logga in</a></li>
+                <li><a class="nav-button" href="skapa-konto.html">Skapa konto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page">
+        <section class="hero">
+            <div>
+                <h1>Nyhetsbrev</h1>
+                <p>
+                    Prenumerera för tips om nya recept, kampanjer och måltidsplanering.
+                    Detta formulär är en demo – inga adresser sparas på server i detta skolprojekt.
+                </p>
+                <a class="btn secondary" href="vanliga-fragor.html">Till vanliga frågor</a>
+            </div>
+            <figure class="img-placeholder">
+                <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+            </figure>
+        </section>
+
+        <section class="card mt-18">
+            <h2 class="section-title">Anmäl dig</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="field-block">
+                    <label for="newsEmail">E-post</label>
+                    <input class="field" id="newsEmail" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="field-block">
+                    <label for="newsName">Namn (valfritt)</label>
+                    <input class="field" id="newsName" name="name" type="text" autocomplete="name">
+                </div>
+                <div class="field-block">
+                    <label class="setting-row">
+                        <input type="checkbox" id="newsConsent" name="consent" value="yes" required>
+                        Jag godkänner att ni skickar nyhetsbrev till min e-post (demo).
+                    </label>
+                </div>
+                <div class="actions">
+                    <button type="submit" class="btn">Prenumerera</button>
+                </div>
+            </form>
+            <p class="muted mt-12">Du kan också stänga av nyhetsbrev i <a href="anvandarprofil.html">användarprofilen</a> (demo).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Target Tasty</p>
+    </footer>
+</body>
+</html>

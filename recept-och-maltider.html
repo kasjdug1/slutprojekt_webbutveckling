@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recept och måltidslösningar | Target Tasty</title>
-    <link rel="stylesheet" href="stilmall.css"> 
+    <link rel="stylesheet" href="css/stilmall.css"> 
 </head>
 <body>
 
@@ -13,13 +13,15 @@
             <div class="logo"><a href="index.html">Target Tasty</a></div>
             <ul>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="om_Oss.html">Om oss</a></li>
-                <li><a href="vanliga_Frågor.html">Vanliga frågor</a></li>
-                <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+                <li><a href="recept-och-maltider.html">Recept och måltidslösningar</a></li>
                 <li><a href="recensioner.html">Recensioner</a></li>
-                <li><a href="användarprofil.html">Användarprofil</a></li>
-                <li><a class="nav-button" href="signIn.html">Sign in</a></li>
-                <li><a class="nav-button" href="signUp.html">Sign up</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                <li><a href="sociala-medier.html">Sociala medier</a></li>
+                <li><a href="anvandarprofil.html">Användarprofil</a></li>
+                <li><a class="nav-button" href="logga-in.html">Logga in</a></li>
+                <li><a class="nav-button" href="skapa-konto.html">Skapa konto</a></li>
             </ul>
         </div>
     </nav>
@@ -32,10 +34,12 @@
                     Välj recept baserat på ditt mål – viktnedgång, muskeluppbyggnad eller en balanserad livsstil.
                    
                 </p>
-                <a class="btn" href="recept_kalorisnalt.html">Kalorisnålt</a>
-                <a class="btn secondary" href="recept_kalorioverskott.html">Kaloriöverskott</a>
+                <a class="btn" href="recept-kalorisnalt.html">Kalorisnålt</a>
+                <a class="btn secondary" href="recept-kalorioverskott.html">Kaloriöverskott</a>
             </div>
-            <div class="img-placeholder" aria-hidden="true"></div>
+            <figure class="img-placeholder">
+                <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+            </figure>
         </section>
 
         <h2 class="section-title">Kategorier</h2>
@@ -43,17 +47,17 @@
             <article class="card">
                 <h3>Kalorisnåla recept</h3>
                 <p>Recept anpassade för viktnedgång och lägre energiintag.</p>
-                <p style="margin-top:10px;"><a class="btn secondary" href="recept_kalorisnalt.html">Öppna</a></p>
+                <p class="mt-10"><a class="btn secondary" href="recept-kalorisnalt.html">Öppna</a></p>
             </article>
             <article class="card">
                 <h3>Kaloriöverskott</h3>
                 <p>Recept för muskeluppbyggnad och högre energiintag.</p>
-                <p style="margin-top:10px;"><a class="btn secondary" href="recept_kalorioverskott.html">Öppna</a></p>
+                <p class="mt-10"><a class="btn secondary" href="recept-kalorioverskott.html">Öppna</a></p>
             </article>
             <article class="card">
                 <h3>Detaljerat recept</h3>
                 <p>Ingredienser, instruktioner, näringsinfo och “lägg i kundvagn”.</p>
-                <p style="margin-top:10px;"><a class="btn secondary" href="recept_detaljer.html">Se exempel</a></p>
+                <p class="mt-10"><a class="btn secondary" href="recept-detalj.html">Se exempel</a></p>
             </article>
         </div>
 
@@ -62,14 +66,18 @@
             <article class="card">
                 <h3>Kyckling & quinoa bowl</h3>
                 <p>En snabb vardagsfavorit med tydliga macros. </p>
-                <div class="img-placeholder" style="margin-top:12px;" aria-hidden="true"></div>
-                <p style="margin-top:12px;"><a class="btn" href="recept_detaljer.html">Visa recept</a></p>
+                <figure class="img-placeholder mt-12">
+                    <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+                </figure>
+                <p class="mt-12"><a class="btn" href="recept-detalj.html">Visa recept</a></p>
             </article>
             <article class="card">
                 <h3>Lax med ugnsrostade grönsaker</h3>
                 <p>Proteinrikt och fräscht. Perfekt för en balanserad livsstil.</p>
-                <div class="img-placeholder" style="margin-top:12px;" aria-hidden="true"></div>
-                <p style="margin-top:12px;"><a class="btn" href="recept_detaljer.html">Visa recept</a></p>
+                <figure class="img-placeholder mt-12">
+                    <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+                </figure>
+                <p class="mt-12"><a class="btn" href="recept-detalj.html">Visa recept</a></p>
             </article>
         </div>
 
@@ -79,10 +87,10 @@
                 När du väljer ett recept kan du lägga till ingredienser i kundvagnen. Därifrån går du vidare till kassan
                 och får en orderbekräftelse efter köp.
             </p>
-            <p style="margin-top:12px;">
+            <p class="mt-12">
                 <a class="btn" href="kundvagn.html">Gå till kundvagn</a>
                 <a class="btn secondary" href="kassa.html">Gå till kassa</a>
-                <a class="btn secondary" href="orderbekraftelse.html">Orderbekräftelse</a>
+                <a class="btn secondary" href="order-bekraftelse.html">Orderbekräftelse</a>
             </p>
         </div>
     </main>

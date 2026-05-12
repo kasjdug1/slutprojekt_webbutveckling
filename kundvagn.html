@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kundvagn | Target Tasty</title>
-    <link rel="stylesheet" href="stilmall.css">
+    <link rel="stylesheet" href="css/stilmall.css">
 </head>
 <body>
     <nav class="navbar">
@@ -12,13 +12,15 @@
             <div class="logo"><a href="index.html">Target Tasty</a></div>
             <ul>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="om_Oss.html">Om oss</a></li>
-                <li><a href="vanliga_Frågor.html">Vanliga frågor</a></li>
-                <li><a href="recept_Och_Måltidslösningar.html">Recept och måltidslösningar</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+                <li><a href="recept-och-maltider.html">Recept och måltidslösningar</a></li>
                 <li><a href="recensioner.html">Recensioner</a></li>
-                <li><a href="användarprofil.html">Användarprofil</a></li>
-                <li><a class="nav-button" href="signIn.html">Sign in</a></li>
-                <li><a class="nav-button" href="signUp.html">Sign up</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                <li><a href="sociala-medier.html">Sociala medier</a></li>
+                <li><a href="anvandarprofil.html">Användarprofil</a></li>
+                <li><a class="nav-button" href="logga-in.html">Logga in</a></li>
+                <li><a class="nav-button" href="skapa-konto.html">Skapa konto</a></li>
             </ul>
         </div>
     </nav>
@@ -29,9 +31,11 @@
                 <h1>Kundvagn</h1>
                 <p>Här ser du dina valda produkter. Justera antal och gå vidare till kassan.</p>
                 <a class="btn" href="kassa.html">Gå till kassa</a>
-                <a class="btn secondary" href="recept_Och_Måltidslösningar.html">Fortsätt handla</a>
+                <a class="btn secondary" href="recept-och-maltider.html">Fortsätt handla</a>
             </div>
-            <div class="img-placeholder" aria-hidden="true"></div>
+            <figure class="img-placeholder">
+                <img src="" width="800" height="450" alt="" loading="lazy" decoding="async">
+            </figure>
         </section>
 
         <h2 class="section-title">Dina produkter</h2>
@@ -39,27 +43,27 @@
             <div class="card">
                 <h3>Kyckling & quinoa bowl</h3>
                 <p class="muted">1 st</p>
-                <p style="margin-top:10px;">
-                    <a class="btn secondary" href="#">-</a>
-                    <a class="btn secondary" href="#">+</a>
+                <p class="mt-10 flex-row-gap">
+                    <button type="button" class="btn secondary" aria-label="Minska antal kyckling och quinoa">-</button>
+                    <button type="button" class="btn secondary" aria-label="Öka antal kyckling och quinoa">+</button>
                 </p>
             </div>
             <div class="card">
                 <h3>Lax med grönsaker</h3>
                 <p class="muted">1 st</p>
-                <p style="margin-top:10px;">
-                    <a class="btn secondary" href="#">-</a>
-                    <a class="btn secondary" href="#">+</a>
+                <p class="mt-10 flex-row-gap">
+                    <button type="button" class="btn secondary" aria-label="Minska antal lax med grönsaker">-</button>
+                    <button type="button" class="btn secondary" aria-label="Öka antal lax med grönsaker">+</button>
                 </p>
             </div>
         </div>
 
-        <section class="card" style="margin-top:14px;">
+        <section class="card mt-14">
             <h3>Sammanfattning</h3>
             <p class="muted">Delsumma: 0 kr (placeholder)</p>
             <p class="muted">Frakt: 0 kr (placeholder)</p>
             <p><strong>Totalt: 0 kr (placeholder)</strong></p>
-            <p style="margin-top:12px;"><a class="btn" href="kassa.html">Till kassan</a></p>
+            <p class="mt-12"><a class="btn" href="kassa.html">Till kassan</a></p>
         </section>
     </main>
 

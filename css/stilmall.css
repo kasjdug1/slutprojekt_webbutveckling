@@ -169,6 +169,7 @@ li a:hover {
     box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
+.card h2,
 .card h3 {
     margin: 0 0 8px;
     color: var(--green);
@@ -181,7 +182,15 @@ li a:hover {
     color: var(--muted);
 }
 
-/* Images */
+.card > .section-title {
+    margin-top: 0;
+}
+
+/* Bildytor: lägg filer i images/ och fyll i src på varje <img> */
+figure.img-placeholder {
+    margin: 0;
+}
+
 .img-placeholder {
     width: 50%;
     aspect-ratio: 16 / 9;
@@ -193,13 +202,25 @@ li a:hover {
     overflow: hidden;
 }
 
+.img-placeholder.img-placeholder--full {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
 .img-placeholder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 14px;
+    display: block;
 }
 
+/* I kort: spänn över hela kortbredden */
+.card .img-placeholder {
+    width: 100%;
+    max-width: 100%;
+}
 
 .section-title {
     margin: 26px 0 10px;
@@ -283,7 +304,8 @@ footer {
     font-family: Inter, sans-serif;
 }
 
-/* Sign in page */
+/* Inloggningssida */
+.signin-page main.login-page,
 .signin-page .login-page {
     min-height: 80vh;
     display: flex;
@@ -301,10 +323,12 @@ footer {
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
+.signin-page .login-container h1,
 .signin-page .login-container h2 {
     margin-bottom: 20px;
     color: var(--green);
     font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
 }
 
 .signin-page .login-btn {
@@ -339,7 +363,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Sign up page */
+/* Registreringssida */
 .signup-page .signup-page-content {
     min-height: 80vh;
     display: flex;
@@ -357,10 +381,12 @@ footer {
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
+.signup-page .signup-container h1,
 .signup-page .signup-container h2 {
     margin-bottom: 20px;
     color: var(--green);
     font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
 }
 
 .signup-page .signup-btn {
@@ -574,10 +600,75 @@ footer {
     opacity: 0.7;
 }
 
-.leverans
-{
-    width:100%; 
-    padding:10px; 
-    border-radius:10px; 
-    border:1px solid rgba(0,0,0,0.15);
+/* Avstånd (ersätter tidigare inline-stilar) */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-14 {
+    margin-top: 14px;
+}
+
+.mt-18 {
+    margin-top: 18px;
+}
+
+.flex-row-gap {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero--compact {
+    margin-top: 12px;
+}
+
+/* Receptdetaljer */
+.recept-panel h2 {
+    margin-top: 0;
+    color: var(--green);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.rowText h3 {
+    margin-top: 0;
+    color: var(--green);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+/* Kontaktformulär */
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.contact-form .field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 6px;
+    font-family: Inter, sans-serif;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.contact-form .field-block {
+    margin-bottom: 1rem;
+}
+
+.contact-form .actions {
+    margin-top: 14px;
 }

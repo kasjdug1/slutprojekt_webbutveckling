@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skapa konto | Target Tasty</title>
+    <link rel="stylesheet" href="css/stilmall.css">
+</head>
+<body class="signup-page">
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">Target Tasty</a></div>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+                <li><a href="recept-och-maltider.html">Recept och måltidslösningar</a></li>
+                <li><a href="recensioner.html">Recensioner</a></li>
+                <li><a href="kontakta-oss.html">Kontakta oss</a></li>
+                <li><a href="sociala-medier.html">Sociala medier</a></li>
+                <li><a href="anvandarprofil.html">Användarprofil</a></li>
+                <li><a class="nav-button" href="logga-in.html">Logga in</a></li>
+                <li><a class="nav-button" href="skapa-konto.html">Skapa konto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="signup-page-content">
+        <div class="signup-container">
+            <h1>Skapa konto</h1>
+
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="name">Fullständigt namn</label>
+                    <input type="text" id="name" name="name" placeholder="För- och efternamn" required autocomplete="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" placeholder="din@epost.se" required autocomplete="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Lösenord</label>
+                    <input type="password" id="password" name="password" placeholder="Välj ett lösenord" required autocomplete="new-password">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Bekräfta lösenord</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Upprepa lösenordet" required autocomplete="new-password">
+                </div>
+
+                <button type="submit" class="signup-btn">Skapa konto</button>
+            </form>
+
+            <div class="extra-links">
+                <p>Har du redan konto? <a href="logga-in.html">Logga in</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/inloggning.js"></script>
+
+</body>
+</html>
