@@ -1,2 +1,0 @@
-Lägg dina bildfiler i den här mappen (t.ex. hero.jpg).
-I HTML: fyll i src på <img>, t.ex. src="images/hero.jpg"

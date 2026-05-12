@@ -186,7 +186,6 @@ li a:hover {
     margin-top: 0;
 }
 
-/* Bildytor: lägg filer i images/ och fyll i src på varje <img> */
 figure.img-placeholder {
     margin: 0;
 }
@@ -216,7 +215,6 @@ figure.img-placeholder {
     display: block;
 }
 
-/* I kort: spänn över hela kortbredden */
 .card .img-placeholder {
     width: 100%;
     max-width: 100%;
