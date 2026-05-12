@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    //  SIGN UP =================
+    //  SIGN UP
     const signupForm = document.getElementById("signupForm");
 
     if (signupForm) {
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// ================= LOGOUT =================
+//  LOGOUT 
 function logout() {
     localStorage.removeItem("loggedIn");
     window.location.href = "signIn.html";
